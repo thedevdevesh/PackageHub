@@ -2,7 +2,7 @@
 
 A modern web application for exploring and searching NPM packages. View it live at [Package Hub](https://thedevdevesh-package-hub.netlify.app/).
 
-![Overview](screenshots/homepage.png)
+![Overview](screenshots/package-hub.gif)
 
 ## Features
 
