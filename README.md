@@ -1,30 +1,97 @@
-# React + TypeScript + Vite
+# Package Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for exploring and searching NPM packages. View it live at [Package Hub](https://thedevdevesh-package-hub.netlify.app/).
 
-Currently, two official plugins are available:
+![Overview](screenshots/homepage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🏠 **Homepage with Featured Packages**: Displays a curated list of popular NPM packages
+- 🔍 **Package Search**: Search through the entire NPM registry
+- 📦 **Package Details**: View detailed information about any NPM package
+- 💅 **Modern UI**: Built with Tailwind CSS for a clean, responsive interface
+- 🚀 **Fast Performance**: Built with Vite for lightning-fast development and production builds
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React 18
+- TypeScript
+- Vite
+- React Router Dom
+- Tailwind CSS
+- React Icons
+- NPM Registry API
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/thedevdevesh/PackageHub.git
+cd package-hub
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build locally
+
+## Project Structure
+
+```
+package-hub/
+├── src/
+│   ├── api/         # API integration
+│   ├── components/  # Reusable components
+│   ├── pages/       # Page components and loaders
+│   └── App.tsx      # Main application component
+├── public/          # Static assets
+└── ...config files
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Deployment
+
+This project is deployed on Netlify. The live version can be accessed at:
+[https://thedevdevesh-package-hub.netlify.app/](https://thedevdevesh-package-hub.netlify.app/)
+
+To deploy your own instance:
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. Deploy the `dist` folder to your preferred hosting platform (Netlify, Vercel, etc.)
+
